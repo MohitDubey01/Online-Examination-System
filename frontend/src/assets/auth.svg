@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="400px" viewBox="0 0 500 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(50, 50)">
+      <!-- Background element -->
+      <rect fill="#E3F2FD" x="0" y="0" width="400" height="300" rx="10"></rect>
+      
+      <!-- Lock icon -->
+      <g transform="translate(150, 60)">
+        <!-- Lock body -->
+        <rect fill="#1976D2" x="20" y="50" width="60" height="60" rx="5"></rect>
+        
+        <!-- Lock shackle -->
+        <path d="M30,50 L30,30 C30,13.4315 43.4315,0 60,0 C76.5685,0 90,13.4315 90,30 L90,50" stroke="#1976D2" stroke-width="12" stroke-linecap="round"></path>
+        
+        <!-- Keyhole -->
+        <circle fill="white" cx="50" cy="80" r="8"></circle>
+        <rect fill="white" x="47" y="80" width="6" height="12"></rect>
+      </g>
+      
+      <!-- User icon -->
+      <g transform="translate(250, 60)">
+        <!-- User head -->
+        <circle fill="#F50057" cx="30" cy="20" r="20"></circle>
+        
+        <!-- User body -->
+        <path d="M0,100 C0,67 60,67 60,100" fill="#F50057"></path>
+      </g>
+      
+      <!-- Shield -->
+      <g transform="translate(75, 180)">
+        <path d="M25,0 L50,10 C50,50 50,65 25,80 C0,65 0,50 0,10 L25,0 Z" fill="#4CAF50"></path>
+        <path d="M20,25 L35,40 L15,50" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+      
+      <!-- Secure connection symbols -->
+      <g transform="translate(250, 170)">
+        <!-- Signal waves -->
+        <path d="M0,40 C10,30 20,20 40,20 C60,20 70,30 80,40" stroke="#1976D2" stroke-width="4" stroke-linecap="round"></path>
+        <path d="M10,50 C20,42 30,35 40,35 C50,35 60,42 70,50" stroke="#1976D2" stroke-width="4" stroke-linecap="round"></path>
+        <path d="M20,60 C25,55 35,50 40,50 C45,50 55,55 60,60" stroke="#1976D2" stroke-width="4" stroke-linecap="round"></path>
+        
+        <!-- Device symbol -->
+        <rect fill="#1976D2" x="30" y="65" width="20" height="30" rx="2"></rect>
+        <rect fill="white" x="35" y="70" width="10" height="15" rx="1"></rect>
+        <circle fill="white" cx="40" cy="90" r="2"></circle>
+      </g>
+      
+      <!-- Text elements -->
+      <text x="200" y="160" font-family="Arial" font-size="18" font-weight="bold" fill="#1976D2" text-anchor="middle">SECURE LOGIN</text>
+      <text x="200" y="250" font-family="Arial" font-size="14" fill="#424242" text-anchor="middle">Protecting your information with</text>
+      <text x="200" y="270" font-family="Arial" font-size="14" fill="#424242" text-anchor="middle">advanced encryption</text>
+    </g>
+  </g>
+</svg>

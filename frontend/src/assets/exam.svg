@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="400px" viewBox="0 0 500 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(50, 20)">
+      <!-- Background notepad -->
+      <rect fill="#F5F5F5" x="0" y="10" width="350" height="320" rx="8"></rect>
+      <rect fill="#E0E0E0" x="0" y="0" width="350" height="30" rx="8"></rect>
+      <rect fill="#F5F5F5" x="0" y="15" width="350" height="20" rx="0"></rect>
+      
+      <!-- Notepad lines -->
+      <line x1="20" y1="60" x2="330" y2="60" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="90" x2="330" y2="90" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="120" x2="330" y2="120" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="150" x2="330" y2="150" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="180" x2="330" y2="180" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="210" x2="330" y2="210" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="240" x2="330" y2="240" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="270" x2="330" y2="270" stroke="#BDBDBD" stroke-width="1"></line>
+      <line x1="20" y1="300" x2="330" y2="300" stroke="#BDBDBD" stroke-width="1"></line>
+      
+      <!-- Checkbox and answers -->
+      <rect x="30" y="75" width="16" height="16" stroke="#1976D2" stroke-width="2" rx="2"></rect>
+      <rect x="30" y="105" width="16" height="16" stroke="#1976D2" stroke-width="2" rx="2"></rect>
+      <rect x="30" y="135" width="16" height="16" stroke="#1976D2" stroke-width="2" rx="2"></rect>
+      <rect x="30" y="165" width="16" height="16" stroke="#1976D2" stroke-width="2" rx="2" fill="#1976D2"></rect>
+      <path d="M35,165 L41,171 L47,159" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      
+      <!-- Question mark symbol -->
+      <circle cx="400" cy="150" r="50" fill="#F50057"></circle>
+      <text x="400" y="175" font-family="Arial" font-size="60" font-weight="bold" fill="white" text-anchor="middle">?</text>
+      
+      <!-- Test title -->
+      <text x="175" y="45" font-family="Arial" font-size="16" font-weight="bold" fill="#1976D2" text-anchor="middle">ONLINE EXAMINATION</text>
+      
+      <!-- Pencil -->
+      <g transform="translate(310, 200) rotate(45)">
+        <rect x="0" y="0" width="100" height="20" rx="2" fill="#FFC107"></rect>
+        <rect x="0" y="0" width="20" height="20" rx="0" fill="#FF5722"></rect>
+        <path d="M0,0 L20,20 L0,20 Z" fill="#E64A19"></path>
+        <rect x="100" y="5" width="15" height="10" rx="0" fill="#E0E0E0"></rect>
+      </g>
+      
+      <!-- Clock symbol in corner -->
+      <circle cx="40" cy="320" r="20" fill="#1976D2"></circle>
+      <circle cx="40" cy="320" r="16" fill="white"></circle>
+      <line x1="40" y1="320" x2="40" y2="310" stroke="#1976D2" stroke-width="2" stroke-linecap="round"></line>
+      <line x1="40" y1="320" x2="48" y2="320" stroke="#1976D2" stroke-width="2" stroke-linecap="round"></line>
+    </g>
+  </g>
+</svg>
