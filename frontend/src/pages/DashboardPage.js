@@ -42,7 +42,7 @@ const DashboardPage = () => {
             <p>View your exam results and performance</p>
           </div>
           
-          <div className="dashboard-card">
+          <div className="dashboard-card" onClick={() => navigateTo('/profile')}>
             <h3>Profile</h3>
             <p>View and update your profile information</p>
           </div>
