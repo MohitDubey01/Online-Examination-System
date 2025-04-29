@@ -10,7 +10,17 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@reduxjs/toolkit": "^2.7.0",
-    "react-redux": "^9.2.0"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@reduxjs/toolkit": "^1.7.1",
+    "axios": "^1.9.0",
+    "braces": "^3.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^5.0.1"
   }
 }

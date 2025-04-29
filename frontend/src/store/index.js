@@ -1,13 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from './reducers/authReducer';
-import examReducer from './reducers/examReducer';
-import resultReducer from './reducers/resultReducer';
+import authReducer from './slices/authSlice';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    auth: authReducer,
-    exam: examReducer,
-    result: resultReducer
+    auth: authReducer
   },
   devTools: process.env.NODE_ENV !== 'production'
 });
