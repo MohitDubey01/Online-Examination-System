@@ -4,11 +4,10 @@ import { useSelector } from 'react-redux';
 import AuthPage from './pages/AuthPage';
 import DashboardPage from './pages/DashboardPage';
 import NotFoundPage from './pages/NotFoundPage';
-
-// Placeholder components (to be created in separate files)
-const ExamList = () => <div>Exam List Page</div>;
-const TakeExam = () => <div>Take Exam Page</div>;
-const Results = () => <div>Results Page</div>;
+import ExamListPage from './pages/ExamListPage';
+import TakeExamPage from './pages/TakeExamPage';
+import ResultsPage from './pages/ResultsPage';
+import ProfilePage from './pages/ProfilePage';
 
 // Protected Route Component
 const ProtectedRoute = ({ component: Component, ...rest }) => {
@@ -34,9 +33,10 @@ function App() {
       <main className="main-content">
         <Switch>
           <ProtectedRoute exact path="/" component={DashboardPage} />
-          <ProtectedRoute exact path="/exams" component={ExamList} />
-          <ProtectedRoute exact path="/exams/:id" component={TakeExam} />
-          <ProtectedRoute exact path="/results" component={Results} />
+          <ProtectedRoute exact path="/exams" component={ExamListPage} />
+          <ProtectedRoute exact path="/exams/:id" component={TakeExamPage} />
+          <ProtectedRoute exact path="/results" component={ResultsPage} />
+          <ProtectedRoute exact path="/profile" component={ProfilePage} />
           <Route exact path={["/login", "/auth"]} component={AuthPage} />
           <Route component={NotFoundPage} />
         </Switch>
