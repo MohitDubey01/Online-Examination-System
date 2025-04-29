@@ -30,24 +30,23 @@ const AuthPage = () => {
       // Login logic
       dispatch(loginStart());
       try {
-        // In a real app, this would be an API call
-        const response = await fetch('/api/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
+        // Mock authentication (temporary until backend is connected)
+        // In a real app, this would call the API endpoint
+        setTimeout(() => {
+          // Simulate successful login
+          const mockUserData = {
+            id: 1,
             username: formData.username,
-            password: formData.password
-          })
-        });
+            token: 'mock-jwt-token',
+            role: 'STUDENT'
+          };
+          
+          // Store in localStorage to persist between refreshes
+          localStorage.setItem('token', mockUserData.token);
+          
+          dispatch(loginSuccess({ token: mockUserData.token, user: mockUserData }));
+        }, 1000); // Simulate network delay
         
-        if (!response.ok) {
-          throw new Error('Login failed');
-        }
-        
-        const userData = await response.json();
-        dispatch(loginSuccess({ token: userData.token, user: userData }));
       } catch (error) {
         dispatch(loginFailure(error.message));
       }
@@ -55,26 +54,24 @@ const AuthPage = () => {
       // Register logic
       dispatch(registerStart());
       try {
-        // In a real app, this would be an API call
-        const response = await fetch('/api/register', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
+        // Mock registration (temporary until backend is connected)
+        // In a real app, this would call the API endpoint
+        setTimeout(() => {
+          // Simulate successful registration
+          const mockUserData = {
+            id: Date.now(), // Generate a unique ID
             username: formData.username,
-            password: formData.password,
             email: formData.email,
-            fullName: formData.fullName
-          })
-        });
-        
-        if (!response.ok) {
-          throw new Error('Registration failed');
-        }
-        
-        const userData = await response.json();
-        dispatch(registerSuccess({ token: userData.token, user: userData }));
+            fullName: formData.fullName,
+            token: 'mock-jwt-token',
+            role: 'STUDENT'
+          };
+          
+          // Store in localStorage to persist between refreshes
+          localStorage.setItem('token', mockUserData.token);
+          
+          dispatch(registerSuccess({ token: mockUserData.token, user: mockUserData }));
+        }, 1000); // Simulate network delay
       } catch (error) {
         dispatch(registerFailure(error.message));
       }
