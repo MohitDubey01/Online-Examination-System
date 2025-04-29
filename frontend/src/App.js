@@ -21,7 +21,7 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
         isAuthenticated ? (
           <Component {...props} />
         ) : (
-          <Redirect to="/login" />
+          <Redirect to="/auth" />
         )
       }
     />
@@ -37,8 +37,8 @@ function App() {
           <ProtectedRoute exact path="/exams" component={ExamList} />
           <ProtectedRoute exact path="/exams/:id" component={TakeExam} />
           <ProtectedRoute exact path="/results" component={Results} />
-          <Route exact path="/login" component={AuthPage} />
-          <Route component={NotFound} />
+          <Route exact path={["/login", "/auth"]} component={AuthPage} />
+          <Route component={NotFoundPage} />
         </Switch>
       </main>
     </div>
